@@ -35,6 +35,31 @@
             </div>
         </div>
 
+        <div class="form-row">
+            <div>
+                <label for="ingreso">Ingresos:</label>
+                <input type="text" th:field="*{ingreso}" id="ingreso">
+                <span th:if="${#fields.hasErrors('ingreso')}" class="ingreso">Ingrese la Cedula correctamente</span>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div>
+                <label for="telefono">Telefono:</label>
+                <input type="text" th:field="*{telefono}" id="telefono">
+                <span th:if="${#fields.hasErrors('telefono')}" class="telefono">Ingrese la Cedula correctamente</span>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div>
+                <label for="pago">Metodo de pago:</label>
+                <select th:field="*{pago}" id="pago">
+                    <option th:each="p: ${pago}" th:value="${p}" th:text="${p}"></option>
+                </select>
+                <span th:if="${#fields.hasErrors('pago')}" class="error">Seleccione un campo</span>
+            </div>
+        </div>
 
 
 

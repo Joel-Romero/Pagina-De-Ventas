@@ -19,8 +19,9 @@ public class VentaControlador {
     public String mostrarFormulario(Model model){
         Venta venta=new Venta();
         model.addAttribute("venta", venta);
-        List<String> listaProfesioines = Arrays.asList("Medicina General", "Pediatría", "Cardiología", "Dermatología", "Oftalmología", "Ortopedia");
-        model.addAttribute("profesion", listaProfesioines);
+        List<String> listaPago = Arrays.asList(
+                "Efectivo", "Tarjeta de débito o crédito", "Pago en efectivo", "Depósito bancario", "Pago por cheque");
+        model.addAttribute("pago", listaPago);
         return "formulario/formulario";
     }
     @PostMapping("/enviar")
