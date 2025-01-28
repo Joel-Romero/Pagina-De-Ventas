@@ -20,5 +20,27 @@ public class Venta {
     @Size(min=3, max=50)
     private String nombre;
 
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
+    }
+
+    @Size(min=3, max=50)
+    private String apellidos;
+
+    public String getCedula() {
+        return cedula;
+    }
+
+    public void setCedula(String cedula) {
+        this.cedula = cedula;
+    }
+
+    @Size(min=10, max=10)
+    private String cedula;
+
 
 }
