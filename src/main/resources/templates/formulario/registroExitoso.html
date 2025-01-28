@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link th:href="@{estilosCSS/Estilo2.css}" rel="stylesheet">
+  <title>Registro De Compra Exitosa</title>
+
+</head>
+<body>
+<div class="container">
+  <h2>Registro De Compra</h2>
+
+  <div class="data-row">
+    <span>Nombres:</span>
+    <span class="value" th:text="${venta.nombre}"></span>
+  </div>
+
+
+</div>
+</body>
+</html>

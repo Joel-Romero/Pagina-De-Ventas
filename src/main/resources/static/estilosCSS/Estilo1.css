@@ -1,0 +1,103 @@
+/* Definir los colores de la temática Chevrolet */
+:root {
+    --chevy-blue: #0066b3;
+    --chevy-silver: #d1d3d4;
+    --chevy-black: #333;
+    --chevy-white: #fff;
+    --chevy-yellow: #ffcc00;
+}
+
+/* Body y contenedor principal */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--chevy-silver);
+    color: var(--chevy-black);
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    width: 70%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--chevy-white);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+h1 {
+    color: var(--chevy-blue);
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/* Filas de formulario */
+.form-row {
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--chevy-blue);
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+.form-row input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Mensajes de error */
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* Botón de enviar */
+.submit-button {
+    background-color: var(--chevy-blue);
+    color: var(--chevy-white);
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: var(--chevy-yellow);
+}
+
+/* Personalización de select */
+select {
+    font-size: 1em;
+    padding: 10px;
+    border: 2px solid var(--chevy-blue);
+    border-radius: 5px;
+}
+
+/* Fondo de la página */
+body {
+    background-image: url('https://www.chevrolet.com/sites/default/files/styles/og_image/public/brand/favicon_chevrolet.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+    background-color: #f3f3f3;
+    padding-top: 50px;
+}

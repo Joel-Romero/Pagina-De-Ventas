@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link th:href="@{estilosCSS/Estilo1.css}" rel="stylesheet">
+    <title>Formulario de Compra</title>
+
+</head>
+<body>
+<div class="container">
+    <h1>Formulario de Compra</h1>
+    <form th:action="@{/enviar}" method="post" th:object="${venta}">
+        <div class="form-row">
+            <div>
+                <label for="nombre">Nombres:</label>
+                <input type="text" th:field="*{nombre}" id="nombre">
+                <span th:if="${#fields.hasErrors('nombre')}" class="error">Error en el nombre</span>
+            </div>
+        </div>
+
+
+
+        <div>
+            <input type="submit" class="submit-button" value="Enviar">
+        </div>
+    </form>
+
+    <div class="form-footer">
+
+    </div>
+</div>
+
+</body>
+</html>
