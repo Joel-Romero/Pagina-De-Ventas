@@ -1,0 +1,133 @@
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #1e2a47;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            margin: 0 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            background-color: #e74c3c;
+        }
+
+        .hero-section {
+            background-image: url('chevrolet-banner.jpg'); /* Usa la URL de la imagen del modelo Chevrolet */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 150px 0;
+            text-align: center;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .hero-section h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background-color: #c0392b;
+        }
+
+        .car-listings {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .car-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            min-width: 280px;
+        }
+
+        .car-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .car-img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .car-info h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .car-info p {
+            font-size: 1.2em;
+            color: #777;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        footer a:hover {
+            color: #e74c3c;
+        }
+    </style>
