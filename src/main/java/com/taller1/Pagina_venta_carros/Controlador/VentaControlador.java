@@ -20,7 +20,7 @@ public class VentaControlador {
         Venta venta=new Venta();
         model.addAttribute("venta", venta);
         List<String> listaPago = Arrays.asList(
-                "Efectivo", "Tarjeta de débito o crédito", "Pago en efectivo", "Depósito bancario", "Pago por cheque");
+                "Tarjeta de débito o de crédito", "Pago en efectivo", "Transferencia bancaria", "Depósito bancario", "Pago por cheque");
         model.addAttribute("pago", listaPago);
         return "formulario/formulario";
     }
